@@ -1,0 +1,56 @@
+<!-- index.html -->
+    <!DOCTYPE html>
+    <html ng-app="bsApp">
+    <head>
+      <!-- SCROLLS -->
+      <!-- load bootstrap and fontawesome via Bower -->
+      <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+      <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
+
+
+      <!-- SPELLS -->
+      <!-- load angular and angular route via Bower -->
+        <script src="bower_components/jquery/jquery.js"></script>
+        <script src=bower_components/angular/angular.js></script>
+        <script src=bower_components/bootstrap/dist/js/bootstrap.js></script>
+        <script src="bower_components/angular-route/angular-route.js"></script>
+        <script src="app.js"></script>
+        <script src="appRoute.js"></script>
+        <script src="loginController.js"></script>
+    </head>
+    <body>
+
+        <!-- HEADER AND NAVBAR -->
+        <header>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+       <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Battle Ship</a>
+                </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#game"><i class="fa fa-gamepad"></i> New Game</a></li>
+                    <li><a href="#stats"><i class="fa fa-bar-chart"></i> Stats</a></li>
+                    <li><a href="#account"><i class="fa fa-user"></i> My Account</a></li>
+                    <li><a href="#help"><i class="fa fa-life-ring"></i> Help</a></li>
+
+                </ul>
+            </div>
+            </nav>
+        </header>
+
+        <!-- MAIN CONTENT AND INJECTED VIEWS -->
+        <div id="main">
+
+             <div ng-view></div>
+
+        </div>
+
+    </body>
+    </html>
