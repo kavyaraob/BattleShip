@@ -1,0 +1,26 @@
+
+.gameItem {
+border-color: darkgray;
+border-style: solid;
+border-radius: 5px;
+width: 50%;
+margin-bottom: 5px;
+    text-align: center;
+}
+
+.lobbyBtn {
+float:left;
+ display:block;
+margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.button-div{
+width: 50px;    
+}
+.friendsList{
+ display: block;
+    width:75%;
+    margin-left: 10px;
+    float:left;
+}

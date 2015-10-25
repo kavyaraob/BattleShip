@@ -26,6 +26,10 @@
          .when('/stats', {
                 templateUrl : 'pages/stats.html',
                 controller  : 'statsCtrl'
+            })
+         .when('/game', {
+                templateUrl : 'pages/game.html',
+                controller  : 'gameCtrl'
             });
        });
  
