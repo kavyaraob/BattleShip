@@ -3,7 +3,7 @@
 
 <div class="container-fluid">
     <div class="row">
-                <div class="col-md-2">
+        <div class="col-md-2">
         </div>
         <div class="col-md-6">
         <div class="button-div">
@@ -14,13 +14,18 @@
             <label>Friends: </label>
              <div ng-repeat="friend in friendsList" class ="friend">
                  <a href="">{{friend.username}}</a>
+                 <img src="/images/online-icon.png" ng-show="friend.isOnline">
+                <img src="/images/offline-icon.png" ng-show="!friend.isOnline">
             </div>
             </div>
         </div>
         <div class="col-md-4">
+            <div class ="gameList">
+            
             <label>Games: </label>
             <div ng-repeat="game in gameList" class ="gameItem">
-                 <a href="">{{game.name}}</a>
+                <a href="">{{game.name}}</a>
+                </div>
             </div>
         </div>
     </div>
